@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Consumo{% endblock %}
+{% block head %}
+{{super()}}
+{% endblock %}
+{% block body %}
+    <div>
+        <div>
+            <img src="/static/medidor.jpg" width="50%">
+        </div>
+        <form action=""  method="POST">
+            <div>
+                <label for="usuario">Gasolina:</label>
+                <input type="double" id="gasolina" name="name" required>
+                <label for="usuario">{{resultado}}:</label>
+            </div>
+            <div >
+                <input type="submit" name="MPG a Kml" value="MPG a Kml">
+                <input type="submit" name="MPG a l/100km" value="MPG a l/100km">
+                <input type="submit" name="Kml a MPG" value="Kml a MPG">
+                <input type="submit" name="Kml a l/100lm" value="Kml a l/100lm">
+                <input type="submit" name="l/100km a MPG" value="l/100km a MPG">
+                <input type="submit" name="l/100km a Kml" value="l/100km a Kml">
+            </div>
+        </form>
+    </div>
+    
+{% endblock %}
